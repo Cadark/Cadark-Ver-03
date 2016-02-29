@@ -1,11 +1,20 @@
 package com.heykorean.cadark.api_retrofit;
 
-import retrofit2.http.GET;
+import com.google.gson.JsonElement;
+
+import retrofit.Call;
+import retrofit.http.GET;
 
 /**
- * Created by Hey.Hung on 2/29/2016.
+ * Created by SonNV1368 on 10/22/15.
+ *
+ * Xay dung cac api lam viec voi server
  */
 public interface IApiMethods {
+
+    //get list contact
     @GET("/cadark/listcar")
-    void getListCarHome();
+    Call<JsonElement> getListCar();
+
 }
+

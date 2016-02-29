@@ -4,57 +4,57 @@ package com.heykorean.cadark.models;
  * Created by Hey.Hung on 2/29/2016.
  */
 public class Carlist_Item {
-    private String nameCarItem;
-    private int imgCarItem;
-    private String numBidItem;
-    private int imgAvarItem;
-    private String priceCarItem;
+    private String name_car;
+    private String image_car;
+    private String num_bid;
+    private String image_avar;
+    private String top_price_car;
 
-    public Carlist_Item(String nameCarItem, int imgCarItem, String numBidItem, int imgAvarItem, String priceCarItem) {
-        this.nameCarItem = nameCarItem;
-        this.imgCarItem = imgCarItem;
-        this.numBidItem = numBidItem;
-        this.imgAvarItem = imgAvarItem;
-        this.priceCarItem = priceCarItem;
+    public Carlist_Item(String name_car, String image_car, String num_bid, String image_avar, String top_price_car) {
+        this.name_car = name_car;
+        this.image_car = image_car;
+        this.num_bid = num_bid;
+        this.image_avar = image_avar;
+        this.top_price_car = top_price_car;
     }
 
-    public String getNameCarItem() {
-        return nameCarItem;
+    public String getName_car() {
+        return name_car;
     }
 
-    public void setNameCarItem(String nameCarItem) {
-        this.nameCarItem = nameCarItem;
+    public void setName_car(String name_car) {
+        this.name_car = name_car;
     }
 
-    public int getImgCarItem() {
-        return imgCarItem;
+    public String getImage_car() {
+        return image_car;
     }
 
-    public void setImgCarItem(int imgCarItem) {
-        this.imgCarItem = imgCarItem;
+    public void setImage_car(String image_car) {
+        this.image_car = image_car;
     }
 
-    public String getNumBidItem() {
-        return numBidItem;
+    public String getNum_bid() {
+        return num_bid;
     }
 
-    public void setNumBidItem(String numBidItem) {
-        this.numBidItem = numBidItem;
+    public void setNum_bid(String num_bid) {
+        this.num_bid = num_bid;
     }
 
-    public int getImgAvarItem() {
-        return imgAvarItem;
+    public String getImage_avar() {
+        return image_avar;
     }
 
-    public void setImgAvarItem(int imgAvarItem) {
-        this.imgAvarItem = imgAvarItem;
+    public void setImage_avar(String image_avar) {
+        this.image_avar = image_avar;
     }
 
-    public String getPriceCarItem() {
-        return priceCarItem;
+    public String getTop_price_car() {
+        return top_price_car;
     }
 
-    public void setPriceCarItem(String priceCarItem) {
-        this.priceCarItem = priceCarItem;
+    public void setTop_price_car(String top_price_car) {
+        this.top_price_car = top_price_car;
     }
 }

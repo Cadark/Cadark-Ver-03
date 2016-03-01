@@ -15,4 +15,5 @@
     <color name="colorTextToolBar">#ffffff</color>
     <color name="colorHintText">#424242</color>
     <color name="colorToolBar">#F9690E</color>
+    <color name="grayColor">#f2f2f2</color>
 </resources>

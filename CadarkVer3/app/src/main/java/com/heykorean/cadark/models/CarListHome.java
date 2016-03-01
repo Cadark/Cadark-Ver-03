@@ -20,6 +20,12 @@ public class CarListHome {
         this.topPrice = topPrice;
     }
 
+    public CarListHome(String carName, String imageCar, String topPrice) {
+        this.carName = carName;
+        this.imageCar = imageCar;
+        this.topPrice = topPrice;
+    }
+
     public String getCarName() {
         return carName;
     }

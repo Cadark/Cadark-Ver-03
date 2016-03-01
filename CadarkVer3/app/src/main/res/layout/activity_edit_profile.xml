@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorToolBar">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Edit Profile"
+            android:textColor="@color/colorTextToolBar"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_confirm_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/iv_confirm_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/ic_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_confirm"
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:layout_gravity="right|center_vertical">
+            <ImageView
+                android:background="@drawable/ic_ok"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/iv_ok"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:hint="Name"
+                android:textColorHint="@color/colorHintText"
+                android:theme="@style/MyTextInputLayout">
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="Lưu Diệu Hoa"
+                    android:textColorHint="@color/colorMain" />
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:layout_margin="8dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/farah_yousef" />
+            </FrameLayout>
+
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Tel"
+        android:textColorHint="@color/colorHintText"
+        android:theme="@style/MyTextInputLayout">
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:text="016546546464"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/colorMain" />
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Address"
+            android:textColorHint="@color/colorHintText"
+            android:theme="@style/MyTextInputLayout">
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:text="117 Tran Duy Hung Street - Ha Noi"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColorHint="@color/colorMain" />
+        </android.support.design.widget.TextInputLayout>
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/ic_background_map"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_show_location"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="left|top" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.heykorean.cadark.R;
-import com.heykorean.cadark.adapter.Carlist_Adapter;
-import com.heykorean.cadark.api_retrofit.IApi;
-import com.heykorean.cadark.models.Carlist_Item;
+import com.heykorean.cadark.adapter.RFAdapterListCarHome;
+import com.heykorean.cadark.api_retrofit.RFApi;
+import com.heykorean.cadark.models.CarListHome;
 
 import java.util.ArrayList;
 
@@ -22,8 +22,8 @@ import java.util.ArrayList;
 public class Home_Listcar_Frag extends Fragment {
 
     private ListView listViewContact;
-    private Carlist_Adapter adapterContact;
-    private ArrayList<Carlist_Item> arrayList;
+    private RFAdapterListCarHome adapterContact;
+    private ArrayList<CarListHome> arrayList;
 
     @Nullable
     @Override
@@ -33,9 +33,9 @@ public class Home_Listcar_Frag extends Fragment {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        arrayList =  IApi.getContact();
-        listViewContact = (ListView)v.findViewById(R.id.listView);
-        adapterContact = new Carlist_Adapter(getActivity(), R.layout.car_list_item, arrayList);
+        arrayList =  RFApi.getContact();
+        listViewContact = (ListView)v.findViewById(R.id.listViewContact);
+        adapterContact = new RFAdapterListCarHome(getActivity(), R.layout.car_list_item, arrayList);
         listViewContact.setAdapter(adapterContact);
 
         return v;

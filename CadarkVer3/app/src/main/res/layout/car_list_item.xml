@@ -7,7 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
         android:orientation="vertical"
         android:background="#eefff4a7">
 
@@ -35,7 +36,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="9dp"
                     android:layout_weight="1"
+                    android:maxLines="1"
                     android:textSize="21sp"
+                    android:textColor="@android:color/black"
                     android:text="Car Nitro GT624"/>
 
                 <ImageView

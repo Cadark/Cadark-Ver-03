@@ -14,10 +14,19 @@
         <ListView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listView">
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:id="@+id/listViewContact">
 
         </ListView>
 
     </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<ListView
+        android:id="@+id/listViewContact"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" />-->
+
 
 </LinearLayout>

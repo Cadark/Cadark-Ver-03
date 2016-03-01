@@ -2,8 +2,8 @@ package com.heykorean.cadark.app;
 
 import android.app.Application;
 
-import com.heykorean.cadark.api_retrofit.IApiCommon;
-import com.heykorean.cadark.api_retrofit.IApiMethods;
+import com.heykorean.cadark.api_retrofit.RFApiCommon;
+import com.heykorean.cadark.api_retrofit.RFApiServices;
 
 import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
@@ -15,18 +15,18 @@ import retrofit.Retrofit;
  */
 public class RFApplication extends Application {
     public static Retrofit mRetrofit;
-    public static IApiMethods apiServices;
+    public static RFApiServices apiServices;
 
     @Override
     public void onCreate() {
         super.onCreate();
 
         mRetrofit = new Retrofit.Builder()
-                .baseUrl(IApiCommon.BASE_API)
+                .baseUrl(RFApiCommon.BASE_API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        apiServices = mRetrofit.create(IApiMethods.class);
+        apiServices = mRetrofit.create(RFApiServices.class);
     }
 
 }

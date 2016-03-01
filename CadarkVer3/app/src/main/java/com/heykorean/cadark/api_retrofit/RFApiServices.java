@@ -10,11 +10,10 @@ import retrofit.http.GET;
  *
  * Xay dung cac api lam viec voi server
  */
-public interface IApiMethods {
+public interface RFApiServices {
 
     //get list contact
     @GET("/cadark/listcar")
-    Call<JsonElement> getListCar();
+    Call<JsonElement> getContacts();
 
 }
-

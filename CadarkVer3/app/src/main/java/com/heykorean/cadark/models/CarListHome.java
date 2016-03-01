@@ -7,9 +7,9 @@ import java.net.URI;
  */
 public class CarListHome {
     private String carName;
-    private URI imageCar;
+    private String imageCar;
     private String numBid;
-    private URI imageAvar;
+    private String imageAvar;
     private String topPrice;
 
     public CarListHome(String carName, String imageCar, String numBid, String imageAvar, String topPrice) {

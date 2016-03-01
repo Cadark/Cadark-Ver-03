@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.heykorean.cadark.R;
 import com.heykorean.cadark.models.CarListHome;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -51,9 +52,11 @@ public class RFAdapterListCarHome extends ArrayAdapter<CarListHome>{
 
         CarListHome carListHome = arrayContact.get(position);
         holder.carName.setText(carListHome.getCarName());
-        holder.carImage.setImageURI(Uri.parse(carListHome.getImageCar()));
+        //holder.carImage.setImageURI(Uri.parse(carListHome.getImageCar()));
+        Picasso.with(holder.carImage.getContext()).load(carListHome.getImageCar()).into(holder.carImage);
         holder.numBid.setText(carListHome.getNumBid());
-        holder.avarImage.setImageURI(Uri.parse(carListHome.getImageAvar()));
+        //holder.avarImage.setImageURI(Uri.parse(carListHome.getImageAvar()));
+        //Picasso.with(holder.avarImage.getContext()).load(carListHome.getImageAvar()).into(holder.avarImage);
         holder.topPricce.setText(carListHome.getTopPrice());
 
         return convertView;

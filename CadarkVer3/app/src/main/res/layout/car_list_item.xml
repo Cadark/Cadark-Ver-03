@@ -28,7 +28,7 @@
                 android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="#b8ffffff">
+                android:background="#3f000000">
 
                 <TextView
                     android:id="@+id/nameItemTv"
@@ -38,7 +38,8 @@
                     android:layout_weight="1"
                     android:maxLines="1"
                     android:textSize="21sp"
-                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
                     android:text="Car Nitro GT624"/>
 
                 <ImageView
@@ -52,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="12dp"
+                    android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:text="12"/>
 
